@@ -18,7 +18,8 @@ if (!platformName) {
 const archName = {
   'x64': 'x64',
   'x86': 'x86',
-  'ia32': 'x86'
+  'ia32': 'x86',
+  'ppc64': 'ppc64'
 }[process.arch];
 if (!archName) {
   throw new Error(`Cannot install tree-sitter-cli for architecture ${process.arch}`);
